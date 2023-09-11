@@ -69,7 +69,7 @@ function exercicio05(){
     areaM2 = parseFloat(window.prompt("Escreva o valor do metro quadrado: "))
 
     resultado = areaTerreno * areaM2
-    resposta = `O valor do terreno em metro quadrado é R$` + resultado;
+    resposta = `O valor do terreno em metro quadrado é R$${resultado}`;
     alert(resposta);
 
 }
@@ -86,9 +86,44 @@ function exercicio06(){
 
     consumoMedioDoVeiculo = distanciaPercorrida / combustivelGasto;
 
-    resposta = `O consumo médio deste véculo é de ` + consumoMedioDoVeiculo + "Km/L"
+    resposta = `O consumo médio deste véculo é de ${consumoMedioDoVeiculo} km/L`
     alert(resposta);
 
 }
 
-exercicio06();
+//Exercício Extra
+function exercicioExtra(){
+    let numero01;
+    let numero02;
+    let calcula;
+    let resultado;
+
+    numero01 = parseFloat(window.prompt("Escreva o primeiro número: "))
+    calcula = window.prompt("Escreva o operador: ")
+    numero02 = parseFloat(window.prompt("Escreva o segundo número: "))
+
+    switch (calcula) {
+        case "+":
+            resultado = numero01 + numero02;
+            alert(resultado)
+            break;
+        case "-":
+            resultado = numero01 - numero02;
+            alert(resultado)
+            break;
+        case "*":
+            resultado = numero01 * numero02;
+            alert(resultado)
+            break
+        case "/":
+            resultado = numero01 / numero02;
+            alert(resultado)
+            break
+        default:
+            exercicioExtra
+            break;
+    }
+
+}
+
+exercicioExtra();
