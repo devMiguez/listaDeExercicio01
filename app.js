@@ -1,4 +1,4 @@
-//Exercicio 01 
+//Exercicio02
 function exercicio01() {
     let numero01;
     let  numero02;
@@ -12,4 +12,17 @@ function exercicio01() {
 
 }
 
-exercicio01();
+//Exercício02
+function exercicio02(){
+    let nome;
+    let sobrenome;
+    let resultado;
+
+    nome = window.prompt("Escreva seu nome: ")
+    sobrenome = window.prompt("Escreva seu sobrenome: ")
+
+    resultado = "Olá, " + nome + " " + sobrenome + "!";
+    alert(resultado);
+}
+
+exercicio02();
