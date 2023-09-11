@@ -74,5 +74,21 @@ function exercicio05(){
 
 }
 
+//Exercício06
+function exercicio06(){
+    let distanciaPercorrida;
+    let combustivelGasto;
+    let consumoMedioDoVeiculo;
+    let resposta;
 
-exercicio05();
+    distanciaPercorrida = parseFloat(window.prompt("Escreva a distancia percorrida em km: "))
+    combustivelGasto = parseFloat(window.prompt("Escreva o combustível gasto em L: "))
+
+    consumoMedioDoVeiculo = distanciaPercorrida / combustivelGasto;
+
+    resposta = `O consumo médio deste véculo é de ` + consumoMedioDoVeiculo + "Km/L"
+    alert(resposta);
+
+}
+
+exercicio06();
