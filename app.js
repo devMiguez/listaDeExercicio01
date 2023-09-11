@@ -41,6 +41,22 @@ function exercicio03(){
 
 }
 
+//Exercício04
+function exercicio04(){
+    let numero;
+    let antecessor;
+    let sucessor;
+    let resposta;
+
+    numero = parseFloat(window.prompt("Escreva um número: "))
+
+    antecessor = numero - 1;
+    sucessor = numero + 1;
+
+    resposta = `O ANTECESSOR do número ${numero} é ${antecessor} / e o SUCESSOR é ${sucessor}`
+    alert(resposta);
+
+}
 
 
-exercicio03();
+exercicio04();
