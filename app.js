@@ -25,4 +25,22 @@ function exercicio02(){
     alert(resultado);
 }
 
-exercicio02();
+//Exercício03
+function exercicio03(){
+    let valorReal;
+    let cotacao = 4.95;
+    let conversao;
+    let resultadoConversao;
+
+    valorReal = window.prompt("Escreva o valor desejado: ")
+
+    conversao = valorReal / cotacao;
+
+    resultadoConversao = "O valor R$" + valorReal + " em dólar é $" + conversao;
+    alert(resultadoConversao);
+
+}
+
+
+
+exercicio03();
