@@ -53,10 +53,26 @@ function exercicio04(){
     antecessor = numero - 1;
     sucessor = numero + 1;
 
-    resposta = `O ANTECESSOR do número ${numero} é ${antecessor} / e o SUCESSOR é ${sucessor}`
+    resposta = `O ANTECESSOR do número ${numero} é ${antecessor}, e o SUCESSOR é ${sucessor}`
+    alert(resposta);
+
+}
+
+//Exercício05 
+function exercicio05(){
+    let areaTerreno;
+    let areaM2;
+    let resultado;
+    let resposta;
+
+    areaTerreno = parseFloat(window.prompt("Escreva a área do terreno e metro quadrado: "))
+    areaM2 = parseFloat(window.prompt("Escreva o valor do metro quadrado: "))
+
+    resultado = areaTerreno * areaM2
+    resposta = `O valor do terreno em metro quadrado é R$` + resultado;
     alert(resposta);
 
 }
 
 
-exercicio04();
+exercicio05();
