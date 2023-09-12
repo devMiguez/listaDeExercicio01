@@ -58,5 +58,53 @@ function exercicio03(){
 
 }
 
+//Um cliente que promove eventos e solicitou um programa que seja capaz de identificar se uma pessoa é maior de idade. 
+//Pessoas com menos de 16 anos não podem entrar nos eventos. Entre 16 e 18 anos somente acompanhado pelos responsáveis. 
+//Maiores de 18 podem entrar normalmente. Escreva o programa em JavaScript.
+function exercicio04(){
+    let idade;
 
-exercicio02();
+    idade = parseInt(window.prompt("Esreva sua idade: "))
+    console.log(`Sua idade é: ${idade}`)
+
+    if(idade < 16){
+        console.log("Você não está autorizado a participar do evento!!")
+    }else if((idade >= 16) && (idade <= 18) ){
+        console.log("Você pode participar do evento somento acompanhado de um RESPONSÁVEL!!")
+    }else if(idade > 18){
+        console.log("Você está autorizado a participar do evento!!")
+    }
+
+}
+
+//Crie um algoritmo que receba login e senha e verifique as credenciais.
+//Caso algum deles estiver errado o programa deve retornar ao usuário quais das opções está errada, se é o login ou a senha. 
+function exercicio05(){
+    let login = "joao13";
+    let senha = 1234;
+    let loginDigitado;
+    let senhaDigitada;
+
+    loginDigitado = window.prompt("Escreva seu login: ")
+    console.log(`Login: ${loginDigitado}`)
+    senhaDigitada = parseInt(window.prompt("Digite sua senha:"))
+    console.log(`Senha: ${senhaDigitada}`)
+
+    if((loginDigitado == login) && (senhaDigitada == senha)){
+        console.log("Acesso autorizado!!")
+    }else if((loginDigitado == login) && (senhaDigitada != senha)){
+        console.log("Acesso negado!! (SENHA INCORRETA)")
+        exercicio05();
+    }else if((loginDigitado != login) && (senhaDigitada == senha)){
+        console.log("Acesso negado!! (LOGIN INCORRETO)")
+        exercicio05();
+    }else if((loginDigitado != login) && (senhaDigitada != senha)){
+        console.log("Acesso negado!! (LOGIN E SENHA INCORRETAS)")
+        exercicio05();
+    }else {
+        console.log("erro")
+    }
+
+}
+
+exercicio05();
