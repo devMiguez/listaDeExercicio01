@@ -120,7 +120,7 @@ function exercicioExtra(){
             alert(resultado)
             break
         default:
-            exercicioExtra
+            exercicioExtra();
             break;
     }
 
