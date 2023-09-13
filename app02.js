@@ -107,4 +107,17 @@ function exercicio05(){
 
 }
 
-exercicio05();
+//Crie um joguinho de perguntas e respostas múltipla escolha. O programa deverá fazer 3 perguntas (Uma por vez). 
+//Se o usuário acertar as 3 perguntas ele ganha o jogo. Se ele errar 3 vezes ele perde o jogo. 
+function exercicio06(){
+    let pergunta01;
+    let pergunta02;
+    let pergunta03;
+
+    pergunta01 = window.prompt("Quantas libertadores o flamengo tem? \n Digite (1): O flamengo tem 40 libertadores \n Digite (2): o flamengo tem 3 libertadores \n Digite (3): O flamengo tem 5 libertadores \n Digite (4): Nenhuma das anteriores")
+    console.log(`Sua resposta foi: ${pergunta01}`)
+    
+
+}
+
+exercicio06();
