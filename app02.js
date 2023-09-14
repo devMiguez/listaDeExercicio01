@@ -113,11 +113,48 @@ function exercicio06(){
     let pergunta01;
     let pergunta02;
     let pergunta03;
+    let ponto = 0;
+    let respostaErrada = 0;
 
+    //pergunta 01
     pergunta01 = window.prompt("Quantas libertadores o flamengo tem? \n Digite (1): O flamengo tem 40 libertadores \n Digite (2): o flamengo tem 3 libertadores \n Digite (3): O flamengo tem 5 libertadores \n Digite (4): Nenhuma das anteriores")
-    console.log(`Sua resposta foi: ${pergunta01}`)
-    
+    if(pergunta01 == 2){
+        ponto++
+        alert("Parabens, resposta correta!!")
+    }else{
+        respostaErrada++
+        alert("Resposta incorreta!!")
+    }
 
+    //Pergunta 02
+    pergunta02 = window.prompt("O vasco é maior que o flamengo? \n Digite (1): Nunca será \n Digite (2): sim kkk aiai");
+    if(pergunta02 == 1){
+        ponto++
+        alert("Parabens, resposta correta!!")
+    }else{
+        respostaErrada++
+        alert("Resposta incorreta!!")
+    }
+
+    //Pergunta 03
+    pergunta03 = window.prompt("O Arthur é flamenguista mas não se assumiu ainda ? \n Digite (1): CLARAMENTE, ARTHUR É FLAMENGUISTA \n Digite (2): nao ");
+    if(pergunta03 == 1){
+        ponto++
+        alert("Parabens, resposta correta!!")
+    }else{
+        respostaErrada++
+        alert("Resposta incorreta!!")
+    }
+
+
+    if(ponto == 3){
+        alert("Parabens, você ganhou o jogo com 3 perguntas respondidas corretamente!!")
+    }else if(respostaErrada == 3){
+        alert("Você perdeu o jogo com 3 respostas incorretas!!")
+    }else{
+        alert(`Você acertou ${ponto} perguntas e errou ${respostaErrada} perguntas!!`)
+    }
+    
 }
 
 exercicio06();
