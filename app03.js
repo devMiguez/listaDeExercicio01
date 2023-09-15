@@ -71,4 +71,49 @@ function exercicio04(){
 
 }
 
-exercicio04();
+//Crie um algoritmo que receba login e senha e verifique as credenciais. 
+//Caso algum deles estiver errado o programa deve retornar ao usuário quais das opções está errada, se é o login ou a senha. 
+//O programa deve bloquear o acesso após 3 tentativas erradas.
+
+function exercicio05(){
+    let login = "joao1234"
+    let senha = 1234
+    let loginDigitado;
+    let senhaDigitada;
+    let tentativas = 1;
+
+    loginDigitado = window.prompt("Digite seu login: ")
+    senhaDigitada = parseInt(window.prompt("Digite sua senha: "))
+    
+    do{
+        if((loginDigitado == login) && (senhaDigitada == senha)){
+            alert("Acesso permitido!!")
+        }else{
+            tentativas++;
+            if((loginDigitado != login) && (senhaDigitada == senha)){
+                alert("Acesso negado!! Login incorreto.")
+                loginDigitado = window.prompt("Digite seu login: ")
+                senhaDigitada = parseInt(window.prompt("Digite sua senha: "))
+                
+            }else if((loginDigitado == login) && (senhaDigitada != senha)){
+                alert("Acesso negado!! senha incorreta.")
+                loginDigitado = window.prompt("Digite seu login: ")
+                senhaDigitada = parseInt(window.prompt("Digite sua senha: "))                
+            }else{
+                alert("Acesso negado!! login e senha incorretos.")
+                loginDigitado = window.prompt("Digite seu login: ")
+                senhaDigitada = parseInt(window.prompt("Digite sua senha: "))                
+            }
+        }
+    }while((tentativas < 3))
+
+    if(tentativas == 3){
+        alert("Acesso bloqueado!!")
+    }
+
+}
+
+
+
+
+exercicio05();
