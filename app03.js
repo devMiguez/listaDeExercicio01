@@ -46,7 +46,29 @@ function exercicio03(){
         }
     }
 
+}
+
+//Um cliente que promove eventos e solicitou um programa que seja capaz de identificar se uma pessoa é maior de idade. 
+//Pessoas com menos de 16 anos não podem entrar nos eventos. Entre 16 e 18 anos somente acompanhado pelos responsáveis. 
+//Maiores de 18 podem entrar normalmente. Escreva o programa em JavaScript.
+function exercicio04(){
+    let idadeDigitada;
+
+    idadeDigitada = parseInt(window.prompt("Digite sua idade: "))
+
+    while(true){
+        if(idadeDigitada < 16){
+            alert(`Você tem ${idadeDigitada} anos!! \nVocê NÃO está permitido a participar do evento!!`)
+        }else if((idadeDigitada == 16) || (idadeDigitada <= 18)){
+            alert(`Você tem ${idadeDigitada} anos!! \nVocê está permitido a participar do evento somente acompanhado de um RESPONSÁVEL!!`)
+        }else if(idadeDigitada > 18){
+            alert(`Você tem ${idadeDigitada} anos!! \nVocê está permitido a participar do evento!!`)
+        }else {
+            alert("erro")
+        }
+        break;
+    }
 
 }
 
-exercicio03();
+exercicio04();
